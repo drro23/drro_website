@@ -1,0 +1,33 @@
+@import 'base';
+
+a {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.lost-404 {
+    width: 40vw;
+}
+
+.text-404 {
+    color: #ff5858;
+    font-family: 'Muli', sans-serif;
+    font-size: 5em;
+    text-align: center;
+}
+
+.text-info-404 {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+
+@media screen and (max-width: 992px) {
+    .lost-404 {
+        width: 100%;
+    }
+}

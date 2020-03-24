@@ -1,0 +1,110 @@
+@use 'base';
+
+.projects-container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
+    grid-row-gap: 20px;
+    justify-content: center;
+    justify-items: center;
+
+    img {
+        object-fit: cover;
+        width: 300px;
+    }
+}
+
+.project {
+    width: 300px;
+    height: 530px;
+    background-color: #272727;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 3px solid #ff5858;
+
+    img {
+        border-radius: 10px;
+        height: 40%;
+    }
+
+    .project-title {
+        color: white;
+        font-size: 1.3em;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 52px;
+    }
+
+    .project-description {
+        color: white;
+        padding: 0 15px 0 15px;
+        font-size: 1.1em;
+        height: 115px;
+    }
+}
+
+.info-title {
+    font-size: 2em;
+}
+
+.info-details {
+    font-size: 1.2em;
+    font-weight: normal;
+    text-indent: 1.5em;
+}
+
+.badge-container {
+    margin-left: 10px;
+}
+
+.dr-badge {
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    background-color: #35477d;
+}
+
+.project-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-url > a {
+    padding: 10px;
+}
+
+.info-url, .video-url {
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.info-url > a:not(:first-child){
+    margin-left: 10px;
+}
+
+.secondary-btn {
+    padding: 0 10px 0 10px;
+    border: 1px solid #ff5858;
+    border-radius: 15px;
+    font-family: 'Muli', sans-serif;
+    transition: 0.4s ease-in-out;
+}
+
+.secondary-btn:hover {
+    background-color: #ff5858;
+}
+
+@media screen and (max-width: 768px) {
+    .info-details {
+        text-indent: 0;
+    }
+}

@@ -1,0 +1,149 @@
+@use "base";
+
+$purple: #ff5858;
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+.title {
+    font-size: 2em;
+}
+
+.container {
+    margin-top: 15px;
+}
+
+.contact-info {
+    font-weight: normal;
+    margin-top: 5px;
+    color: #333333;
+    font-size: 1.2em;
+    text-indent: 1.5em;
+}
+
+#nameField, #emailField {
+    margin: 20px auto 0 auto;
+    display: block;
+    padding: 0 30px 0 20px;
+    border-radius: 10px;
+    border: 1px solid #a4a4a4;
+    width: 290px;
+    height: 40px;
+}
+
+#messageField {
+    display: block;
+    margin: 20px auto 0 auto;
+    width: 330px;
+    height: 80px;
+    resize: unset;
+    border-color: #a4a4a4;
+    border-radius: 10px;
+    outline: unset;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+.card {
+    width: 400px;
+    height: 485px;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 1px 1px 7px #b9b9b9;
+}
+
+.space {
+    display: block;
+    width: 1px;
+    height: 1px;
+    margin-top: 10px;
+}
+
+.success {
+    color: green;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.error {
+    font-size: medium;
+    display: block;
+    margin: 5px auto 5px auto;
+    color: rgb(211, 36, 36);
+    text-align: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.g-recaptcha {
+    display: inline-block;
+}
+
+.none {
+    opacity: 0;
+
+}
+
+/* Responsive */
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .contact-info {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .contact-info {
+        text-indent: 0;
+    }
+
+    #nameField, #emailField, #messageField {
+        width: 250px
+    }
+
+    .card {
+        width: 320px;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 340px) {
+
+    #nameField, #emailField, #messageField {
+        width: 200px;
+    }
+
+    .card {
+        width: 290px;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
