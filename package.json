@@ -20,7 +20,7 @@
     },
     "devDependencies": {
         "@mdi/font": "^4.9.95",
-        "axios": "^0.19.2",
+        "axios": "^0.21.1",
         "bootstrap": "^4.4.1",
         "cross-env": "^5.2.1",
         "jquery": "^3.2",
